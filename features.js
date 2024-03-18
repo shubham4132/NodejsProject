@@ -1,2 +1,3 @@
 const name = "shubham";
-module.exports = name;
+// module.exports = name;
+export default name;
