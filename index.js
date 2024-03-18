@@ -1,6 +1,11 @@
 import express from "express";
 //making the server
-const server = express();
-server.listen(5000, () => {
+const app = express();
+
+app.get("/", (req, res) => {
+  // res.send("hi");
+  res.sendStatus(404);
+});
+app.listen(5000, () => {
   console.log("server is working");
 });
